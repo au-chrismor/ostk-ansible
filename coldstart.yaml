@@ -3,4 +3,5 @@
   gather_facts: True
   roles:
     - openstack_core
+    - db_install
     

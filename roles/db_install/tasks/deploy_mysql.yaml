@@ -1,0 +1,20 @@
+---
+- name: Install MySQL Python Library
+  ansible.builtin.apt:
+    name: "python3-pymysql"
+    state: latest
+    update_cache: yes
+    force_apt_get: True
+  become: True
+  become_method: sudo
+  become_user: root
+  
+- name: Install MySQL Server
+  ansible.builtin.apt:
+    name: "mariadb-server"
+    state: latest
+    update_cache: yes
+    force_apt_get: True
+  become: True
+  become_method: sudo
+  become_user: root

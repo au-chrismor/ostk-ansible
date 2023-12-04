@@ -1,0 +1,21 @@
+---
+- name: Set up hosts file
+  template:
+    src: "template/hosts.j2"
+    dest: "/etc/hosts"
+    owner: root
+    group: root
+    mode: "0644"
+  become: True
+  become_method: sudo
+  become_user: root
+  
+- name: Install the openstack client
+  ansible.builtin.apt:
+    name: "python3-openstackclient"
+    state: latest
+    update_cache: yes
+    force_apt_get: True
+  become: True
+  become_method: sudo
+  become_user: root
