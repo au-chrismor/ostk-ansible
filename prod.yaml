@@ -1,0 +1,24 @@
+all:
+  hosts:
+    au-cache-0001.7-red.tld
+    au-db-0001.7-red.tld
+    au-db-0002.7-red.tld
+    au-etcd-0001.7-red.tld
+    au-mq-0001.7-red.tld
+
+database:
+  hosts:
+    au-db-0001.7-red.tld
+    au-db-0002.7-red.tld
+
+etcd:
+  hosts:
+    au-etcd-0001.7-red.tld
+
+memcached:
+  hosts:
+    au-cache-0001.7-red.tld
+
+message_queue:
+  hosts:
+    au-mq-0001.7-red.tld

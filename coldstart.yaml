@@ -1,0 +1,6 @@
+---
+- hosts: database
+  gather_facts: True
+  roles:
+    - openstack_core
+    
