@@ -1,0 +1,5 @@
+---
+ansible_python_interpreter: auto
+ansible_user: maint
+db_1_ip: 10.255.255.1
+db_2_ip: 10.255.255.2
